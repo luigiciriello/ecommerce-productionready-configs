@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://catalog-db:5432/catalog
+    url: jdbc:postgresql://orders-db:5432/orders
   profiles:
     active: docker
   config:
@@ -13,6 +13,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://eurekaserver:8070/eureka/
-
+      
 server:
   port: 2550
