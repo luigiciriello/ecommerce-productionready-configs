@@ -3,11 +3,6 @@ spring:
     url: jdbc:postgresql://customer-db:5432/customers
   profiles:
     active: docker
-  config:
-    import: optional:configserver:http://configserver:8888
-  cloud:
-    config:
-      uri: http://configserver:8888
 
 eureka:
   client:

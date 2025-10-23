@@ -3,16 +3,11 @@ spring:
     url: jdbc:postgresql://orders-db:5432/orders
   profiles:
     active: docker
-  config:
-    import: optional:configserver:http://configserver:8888
-  cloud:
-    config:
-      uri: http://configserver:8888
 
 eureka:
   client:
     serviceUrl:
       defaultZone: http://eurekaserver:8070/eureka/
-      
+
 server:
   port: 2550
