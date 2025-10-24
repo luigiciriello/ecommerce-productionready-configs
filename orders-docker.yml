@@ -1,8 +1,6 @@
 spring:
   datasource:
     url: jdbc:postgresql://orders-db:5432/orders
-  profiles:
-    active: docker
 
 eureka:
   client:

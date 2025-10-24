@@ -1,8 +1,7 @@
 spring:
   datasource:
     url: jdbc:postgresql://customer-db:5432/customers
-  profiles:
-    active: docker
+
 
 eureka:
   client:
